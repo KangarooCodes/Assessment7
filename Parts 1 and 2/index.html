@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>TimeWord</title>
+</head>
+<body>
+	<h1>Enter a 24h-time and get it returned as words!</h1>
+	<h4>(input format of 17:23 will return 'five twenty three pm')</h5>
+
+	<!-- Was using jQuery to display the correct time with the form below,
+		but JEST did not like that, so functionality was removed for testing purposes -->
+
+	<!-- Use Chrome's dev console with something like "timeWord('00:00')" -->
+
+	<form action="">
+		<label for="time">Time: </label>
+		<input type="text" id="time">
+		<button id="convert" onclick="button()">convert</button>
+	</form>
+	<br>
+	<div id="result"></div>
+
+	<script src='timeWord.js'></script>
+</body>
+</html>
